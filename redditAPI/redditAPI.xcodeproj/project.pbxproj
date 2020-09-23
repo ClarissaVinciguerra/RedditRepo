@@ -15,6 +15,9 @@
 		70117EDE251BAEB700B63CDE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70117EDD251BAEB700B63CDE /* Post.swift */; };
 		70117EE2251BB54700B63CDE /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70117EE1251BB54700B63CDE /* PostController.swift */; };
 		70117EE5251BB6B800B63CDE /* PostError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70117EE4251BB6B800B63CDE /* PostError.swift */; };
+		70DACC29251BE47D0058FC7D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DACC28251BE47D0058FC7D /* PostTableViewCell.swift */; };
+		70DACC2C251BE94B0058FC7D /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DACC2B251BE94B0058FC7D /* PostListTableViewController.swift */; };
+		70DACC2F251BEF830058FC7D /* ErrorActionSheetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DACC2E251BEF830058FC7D /* ErrorActionSheetExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		70117EDD251BAEB700B63CDE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		70117EE1251BB54700B63CDE /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		70117EE4251BB6B800B63CDE /* PostError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostError.swift; sourceTree = "<group>"; };
+		70DACC28251BE47D0058FC7D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		70DACC2B251BE94B0058FC7D /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		70DACC2E251BEF830058FC7D /* ErrorActionSheetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorActionSheetExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		70117ED8251BAA4800B63CDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				70DACC27251BE4610058FC7D /* CustomViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 		70117EDA251BAA5A00B63CDE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70DACC2B251BE94B0058FC7D /* PostListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -125,8 +133,17 @@
 			isa = PBXGroup;
 			children = (
 				70117EE4251BB6B800B63CDE /* PostError.swift */,
+				70DACC2E251BEF830058FC7D /* ErrorActionSheetExtension.swift */,
 			);
 			path = "Helpers and extensions";
+			sourceTree = "<group>";
+		};
+		70DACC27251BE4610058FC7D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				70DACC28251BE47D0058FC7D /* PostTableViewCell.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DACC2F251BEF830058FC7D /* ErrorActionSheetExtension.swift in Sources */,
 				70117EE5251BB6B800B63CDE /* PostError.swift in Sources */,
 				70117EDE251BAEB700B63CDE /* Post.swift in Sources */,
+				70DACC2C251BE94B0058FC7D /* PostListTableViewController.swift in Sources */,
 				70117EE2251BB54700B63CDE /* PostController.swift in Sources */,
 				70117EC0251BA9FD00B63CDE /* AppDelegate.swift in Sources */,
 				70117EC2251BA9FD00B63CDE /* SceneDelegate.swift in Sources */,
+				70DACC29251BE47D0058FC7D /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

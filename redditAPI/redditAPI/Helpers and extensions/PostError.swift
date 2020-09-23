@@ -15,4 +15,19 @@ enum PostError: LocalizedError {
     case noData
     case thrownImageError(Error)
     case unableToDecodeImage
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            return "The server failed to reach the necessary URL"
+        case .thrownError(let error):
+            return "There was an error \(error.localizedDescription)"
+        case .noData:
+            return "No data found."
+        case .thrownImageError(let error):
+            return "There was an error \(error.localizedDescription)"
+        case .unableToDecodeImage:
+            return "There was an error decoding data."
+        }
+    }
 }
